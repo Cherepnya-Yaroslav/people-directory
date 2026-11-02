@@ -84,12 +84,16 @@ export function Field({
 export function Sheet({
   title,
   children,
+  open,
   onClose,
+  onExited,
   wide = false,
 }: {
   title: string;
   children: ReactNode;
+  open: boolean;
   onClose: () => void;
+  onExited: () => void;
   wide?: boolean;
 }) {
   const ref = useRef<HTMLDialogElement>(null);
@@ -105,10 +109,24 @@ export function Sheet({
       previous?.focus();
     };
   }, []);
+  useEffect(() => {
+    if (open) return;
+    let cancelled = false;
+    const animations = ref.current?.getAnimations({ subtree: true }) ?? [];
+    void Promise.allSettled(
+      animations.map((animation) => animation.finished),
+    ).then(() => {
+      if (!cancelled) onExited();
+    });
+    return () => {
+      cancelled = true;
+    };
+  }, [open, onExited]);
   return (
     <dialog
       ref={ref}
       className={`sheet ${wide ? "sheet-wide" : ""}`}
+      data-open={open}
       aria-labelledby="sheet-title"
       onCancel={(event) => {
         event.preventDefault();

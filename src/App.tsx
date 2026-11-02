@@ -17,6 +17,7 @@ import { Auth } from "./components/Auth";
 import { EmployeeCard } from "./components/EmployeeCard";
 import { EmployeeDetail } from "./components/EmployeeDetail";
 import { EmployeeForm } from "./components/EmployeeForm";
+import { EmployeeSkeleton } from "./components/ShimmerSkeleton";
 import { Avatar, Brand, EmptyState } from "./components/ui";
 
 export function App() {
@@ -105,7 +106,9 @@ function Directory({ user, onLogout }: { user: User; onLogout: () => void }) {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const [selected, setSelected] = useState<Employee | null>(null);
+  const [profileOpen, setProfileOpen] = useState(false);
   const [adding, setAdding] = useState(false);
+  const [formOpen, setFormOpen] = useState(false);
   const [refresh, setRefresh] = useState(0);
   const [toast, setToast] = useState("");
   const [loggingOut, setLoggingOut] = useState(false);
@@ -154,8 +157,18 @@ function Directory({ user, onLogout }: { user: User; onLogout: () => void }) {
     }
   }
 
+  function openForm() {
+    setAdding(true);
+    setFormOpen(true);
+  }
+
+  function openProfile(employee: Employee) {
+    setSelected(employee);
+    setProfileOpen(true);
+  }
+
   function created(employee: Employee) {
-    setAdding(false);
+    setFormOpen(false);
     setSearch("");
     setDepartment("");
     setRefresh((value) => value + 1);
@@ -206,10 +219,7 @@ function Directory({ user, onLogout }: { user: User; onLogout: () => void }) {
               Разные таланты. <span>Одна команда.</span>
             </p>
           </div>
-          <button
-            className="button primary add-button"
-            onClick={() => setAdding(true)}
-          >
+          <button className="button primary add-button" onClick={openForm}>
             <Plus size={20} />
             Добавить сотрудника
           </button>
@@ -297,20 +307,7 @@ function Directory({ user, onLogout }: { user: User; onLogout: () => void }) {
             </button>
           </div>
         ) : loading ? (
-          <div
-            className="employee-grid skeleton-grid"
-            role="status"
-            aria-label="Загрузка сотрудников"
-          >
-            {Array.from({ length: 5 }, (_, i) => (
-              <div className="skeleton-card" key={i}>
-                <span />
-                <div />
-                <div />
-                <div />
-              </div>
-            ))}
-          </div>
+          <EmployeeSkeleton view={view} />
         ) : data.employees.length === 0 ? (
           <EmptyState
             filtered={!!search || !!department}
@@ -318,7 +315,7 @@ function Directory({ user, onLogout }: { user: User; onLogout: () => void }) {
               setSearch("");
               setDepartment("");
             }}
-            onAdd={() => setAdding(true)}
+            onAdd={openForm}
           />
         ) : (
           <section
@@ -329,11 +326,11 @@ function Directory({ user, onLogout }: { user: User; onLogout: () => void }) {
               <EmployeeCard
                 key={employee.id}
                 employee={employee}
-                onOpen={setSelected}
+                onOpen={openProfile}
               />
             ))}
             {!search && !department && view === "grid" && (
-              <button className="add-card" onClick={() => setAdding(true)}>
+              <button className="add-card" onClick={openForm}>
                 <span className="add-card-icon">
                   <Plus size={28} strokeWidth={1.5} />
                 </span>
@@ -359,12 +356,19 @@ function Directory({ user, onLogout }: { user: User; onLogout: () => void }) {
         </footer>
       </main>
       {selected && (
-        <EmployeeDetail employee={selected} onClose={() => setSelected(null)} />
+        <EmployeeDetail
+          employee={selected}
+          open={profileOpen}
+          onClose={() => setProfileOpen(false)}
+          onExited={() => setSelected(null)}
+        />
       )}
       {adding && (
         <EmployeeForm
           departments={data.departments.map((item) => item.name)}
-          onClose={() => setAdding(false)}
+          open={formOpen}
+          onClose={() => setFormOpen(false)}
+          onExited={() => setAdding(false)}
           onCreated={created}
         />
       )}

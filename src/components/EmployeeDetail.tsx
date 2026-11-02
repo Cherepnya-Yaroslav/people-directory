@@ -5,10 +5,14 @@ import { departmentTone } from "./EmployeeCard";
 
 export function EmployeeDetail({
   employee,
+  open,
   onClose,
+  onExited,
 }: {
   employee: Employee;
+  open: boolean;
   onClose: () => void;
+  onExited: () => void;
 }) {
   const joined = employee.joinedAt
     ? new Intl.DateTimeFormat("ru", {
@@ -18,7 +22,12 @@ export function EmployeeDetail({
       }).format(new Date(`${employee.joinedAt}T12:00:00`))
     : "";
   return (
-    <Sheet title="Профиль сотрудника" onClose={onClose}>
+    <Sheet
+      title="Профиль сотрудника"
+      open={open}
+      onClose={onClose}
+      onExited={onExited}
+    >
       <div className="detail-body">
         <div className="detail-intro">
           <Avatar name={employee.fullName} src={employee.photoUrl} />

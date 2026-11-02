@@ -9,8 +9,10 @@ First viewport: spacious app shell, People wordmark, a single active directory t
 
 Typography: self-hosted Manrope, light large heading, medium labels. Palette: near-black page, charcoal cards, warm-white primary type, muted lavender-gray secondary type, electric-blue primary action, pink and lavender department accents. Rounded containers and pill controls echo the reference. Borders and generous space define hierarchy.
 
-Signature interaction: a selected employee opens a calm right-hand detail sheet; adding uses the same focused panel. A short 220ms ease-out entrance connects the directory to its detail. Filters respond immediately, announcing result counts; list/grid switch changes density. Reduced-motion preference removes transitions.
+Signature interaction: a selected employee opens a calm right-hand detail sheet; adding uses the same focused panel. A 280ms interruptible slide with cubic-bezier(0.32, 0.72, 0, 1) connects the directory to its detail on entry and exit. The backdrop fades over 200ms; the modal retains focus until exit completes. Filters respond immediately, announcing result counts; list/grid switch changes density. Reduced-motion preference removes transitions.
 
 Responsive: three columns on wide desktop, two on tablet, one on phones. Search and actions wrap; filters scroll horizontally. Detail sheets become full-width on phones. Authentication uses a portrait-led introduction and a compact form, stacking on small screens.
 
 Risk: muted charcoal can lose control contrast; keep visible outlines, strong focus rings and body text at accessible contrast. Demo identities must remain explicitly fictional.
+
+The page canvas is charcoal through the scroll edges, with no vertical shell margin. Employee loading uses a 1.6s Unlumen-style shimmer matching the current grid or list layout; reduced motion renders static placeholders.

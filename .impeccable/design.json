@@ -48,16 +48,16 @@
       },
       "frame": {
         "role": "neutral",
-        "displayName": "Gray Frame",
+        "displayName": "Near-black Canvas",
         "tonalRamp": [
-          "oklch(15.00% 0.01592 277.76)",
-          "oklch(26.43% 0.01592 277.76)",
-          "oklch(37.86% 0.01592 277.76)",
-          "oklch(49.29% 0.01592 277.76)",
-          "oklch(60.71% 0.01592 277.76)",
-          "oklch(72.14% 0.01592 277.76)",
-          "oklch(83.57% 0.01592 277.76)",
-          "oklch(95.00% 0.01592 277.76)"
+          "oklch(15.00% 0.00399 286.02)",
+          "oklch(26.43% 0.00399 286.02)",
+          "oklch(37.86% 0.00399 286.02)",
+          "oklch(49.29% 0.00399 286.02)",
+          "oklch(60.71% 0.00399 286.02)",
+          "oklch(72.14% 0.00399 286.02)",
+          "oklch(83.57% 0.00399 286.02)",
+          "oklch(95.00% 0.00399 286.02)"
         ]
       },
       "panel": {
@@ -557,9 +557,9 @@
         "purpose": "Card background and border transitions."
       },
       {
-        "name": "sheet-enter",
-        "value": "240ms cubic-bezier(0.16, 1, 0.3, 1)",
-        "purpose": "From translateX(28px) and opacity .7 to translateX(0) and opacity 1."
+        "name": "sheet-transition",
+        "value": "280ms cubic-bezier(0.32, 0.72, 0, 1)",
+        "purpose": "Interruptible entry and exit between translateX(100%) and translateX(0); panel and backdrop opacity fade over 200ms. Focus and scroll lock remain until exit finishes."
       },
       {
         "name": "loading",
@@ -570,6 +570,11 @@
         "name": "reduced-motion",
         "value": "animation: none !important; transition: none !important; scroll-behavior: auto !important;",
         "purpose": "Applied to every element and pseudo-element under prefers-reduced-motion: reduce."
+      },
+      {
+        "name": "employee-shimmer",
+        "value": "1.6s ease-in-out infinite",
+        "purpose": "A translucent gradient sweeps from translateX(-100%) to translateX(200%). Static under reduced motion."
       }
     ],
     "breakpoints": [

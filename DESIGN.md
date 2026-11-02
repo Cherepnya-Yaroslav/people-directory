@@ -5,7 +5,7 @@ colors:
   primary: "#1666df"
   primary-hover: "#2470e8"
   page: "#141416"
-  frame: "#a6a8b3"
+  frame: "#141416"
   panel: "#232227"
   panel-hover: "#26242b"
   sheet: "#232027"
@@ -232,7 +232,7 @@ The palette combines deep charcoal with warm lavender-gray text, deliberate acti
 
 ### Neutral
 
-- **Near-black Ground** (`page`) and **Gray Frame** (`frame`): application canvas and desktop surround. The outer frame disappears at the mobile breakpoint.
+- **Near-black Ground** (`page` / `frame`): a continuous charcoal canvas at every viewport width, including the top and bottom scroll edges. Shells have no vertical outer margin.
 - **Charcoal Panel** (`panel` / `panel-hover`): employee surfaces and the search area; hovering a card makes its surface slightly lighter.
 - **Plum Charcoal** (`sheet` / `field`): sheets and inset form controls.
 - **Warm White** (`text`): dominant reading color. **Lavender Gray** (`muted`) and **Quiet Gray** (`faint`) support secondary information.
@@ -250,7 +250,7 @@ Self-hosted Manrope supplies the whole interface. Large, relatively light headin
 
 ### Hierarchy
 
-- **Display:** the authentication introduction; responsive sizes step down through 46, 39, 38 and 35 px as the layout narrows.
+- **Display:** the authentication introduction; responsive sizes step down through 46, 36, 38 and 35 px as the layout narrows.
 - **Headline:** the directory heading; steps down to 40 px at 1000 px and 36 px at 700 px.
 - **Form title:** the authentication form heading; 28 px on mobile.
 - **Title:** employee names; the card layout adjusts them between 18 and 22 px, and the compact list uses 17 or 16 px.
@@ -318,7 +318,7 @@ The current directory appears as a quiet rounded header indicator alongside the 
 
 ### Side Sheet
 
-A native modal dialog anchors profile and add-person tasks to the right side of the directory. It dims the background, locks page scrolling, accepts Escape through the close handler and restores focus to the prior control. The implemented entrance is **240 ms** with `cubic-bezier(0.16, 1, 0.3, 1)`, moving from 28 px right and 0.7 opacity. This code value supersedes the provisional 220 ms direction brief. Reduced-motion preference removes all animations and transitions. Loading placeholders use a 1.4 s opacity pulse that is also removed under reduced motion.
+A native modal dialog anchors profile and add-person tasks to the right side of the directory. It dims the background, locks page scrolling, accepts Escape through the close handler and restores focus to the prior control. Entry and exit use an interruptible **280 ms** transition with `cubic-bezier(0.32, 0.72, 0, 1)` between `translateX(100%)` and `translateX(0)`. Panel opacity and backdrop fade over 200 ms. The dialog stays mounted until transitions finish, then restores focus and scrolling. Reduced-motion preference removes all animations and transitions. Employee placeholders match the current grid or list layout and use the Unlumen Shimmer Skeleton sweep (1.6 s ease-in-out); they become static under reduced motion. The initial session check retains its 1.4 s loading-line pulse.
 
 ## Do's and Don'ts
 

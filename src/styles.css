@@ -1,7 +1,7 @@
 :root {
   font-family: "Manrope Variable", sans-serif;
   color: #f5f5f7;
-  background: #a6a8b3;
+  background: var(--bg);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -15,6 +15,8 @@
   --pink: #ee458e;
   --lilac: #c0b4ed;
   --radius: 24px;
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
   color-scheme: dark;
 }
 * {
@@ -23,6 +25,7 @@
 body {
   margin: 0;
   min-width: 320px;
+  background: var(--bg);
 }
 button,
 input,
@@ -103,8 +106,8 @@ a[href^="tel:"]:hover {
 }
 .app-shell {
   max-width: 1480px;
-  margin: 36px auto;
-  min-height: calc(100dvh - 72px);
+  margin: 0 auto;
+  min-height: 100dvh;
   background: var(--bg);
   border-radius: 32px;
   padding: 0 48px;
@@ -688,8 +691,8 @@ a[href^="tel:"]:hover {
   display: grid;
   grid-template-columns: 1.03fr 1fr;
   max-width: 1280px;
-  margin: 48px auto;
-  min-height: 780px;
+  margin: 0 auto;
+  min-height: max(780px, 100dvh);
   background: var(--bg);
   border-radius: 32px;
   overflow: hidden;
@@ -929,32 +932,6 @@ a[href^="tel:"]:hover {
   text-decoration: underline;
   text-underline-offset: 4px;
 }
-.demo-note {
-  display: flex;
-  align-items: center;
-  gap: 13px;
-  margin-top: 37px;
-  border-top: 1px solid #38313f;
-  padding-top: 23px;
-}
-.demo-note p {
-  font-size: 10px;
-  color: #a89bb3;
-  line-height: 1.7;
-}
-.avatar-stack {
-  display: flex;
-  padding-left: 0;
-}
-.avatar-stack .avatar {
-  width: 30px;
-  height: 30px;
-  border: 2px solid #141416;
-  margin-left: -8px;
-}
-.avatar-stack .avatar:first-child {
-  margin-left: 0;
-}
 .auth-bottom {
   font-size: 10px;
   color: #a296ad;
@@ -989,7 +966,11 @@ a[href^="tel:"]:hover {
   background: #232027;
   color: #f6eff9;
   box-shadow: -20px 0 70px #0005;
-  animation: sheet-enter 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateX(100%);
+  opacity: 0;
+  transition:
+    transform 280ms var(--ease-drawer),
+    opacity 200ms var(--ease-out);
   overflow: auto;
 }
 .sheet-wide {
@@ -997,6 +978,24 @@ a[href^="tel:"]:hover {
 }
 .sheet::backdrop {
   background: #0b0910b5;
+  opacity: 0;
+  transition: opacity 200ms var(--ease-out);
+}
+.sheet[data-open="true"] {
+  transform: translateX(0);
+  opacity: 1;
+}
+.sheet[data-open="true"]::backdrop {
+  opacity: 1;
+}
+@starting-style {
+  .sheet[data-open="true"] {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  .sheet[data-open="true"]::backdrop {
+    opacity: 0;
+  }
 }
 .sheet-heading {
   display: flex;
@@ -1238,51 +1237,102 @@ a[href^="tel:"]:hover {
   border-radius: 4px;
   animation: loading 1.4s ease-in-out infinite;
 }
-.skeleton-card {
-  height: 350px;
-  background: #242128;
-  border: 1px solid #403747;
-  border-radius: 24px;
-  padding: 25px;
-  animation: loading 1.4s ease-in-out infinite;
+.shimmer-skeleton {
+  position: relative;
+  overflow: hidden;
+  background: #39353f;
 }
-.skeleton-card > span {
-  display: block;
+.shimmer-rounded-none {
+  border-radius: 0;
+}
+.shimmer-rounded-sm {
+  border-radius: 4px;
+}
+.shimmer-rounded-md {
+  border-radius: 6px;
+}
+.shimmer-rounded-lg {
+  border-radius: 12px;
+}
+.shimmer-rounded-full {
+  border-radius: 999px;
+}
+.shimmer-sweep {
+  position: absolute;
+  inset: 0;
+  transform: translateX(-100%);
+  background: linear-gradient(90deg, transparent, #f5f5f70f, transparent);
+  animation: shimmer 1.6s ease-in-out infinite;
+}
+@keyframes shimmer {
+  to {
+    transform: translateX(200%);
+  }
+}
+.skeleton-card {
+  pointer-events: none;
+}
+.skeleton-avatar {
   width: 76px;
   height: 76px;
-  border-radius: 50%;
-  background: #3c3444;
-  margin-bottom: 26px;
+  flex-shrink: 0;
 }
-.skeleton-card > div {
+.skeleton-badge {
+  width: 90px;
+  height: 25px;
+}
+.skeleton-name {
+  width: 70%;
+  height: 27px;
+}
+.skeleton-full-name {
+  width: 86%;
   height: 14px;
-  background: #3c3444;
-  border-radius: 6px;
-  margin-bottom: 17px;
-  max-width: 75%;
+  margin-top: 5px;
 }
-.skeleton-card > div:last-child {
-  max-width: 55%;
+.skeleton-position {
+  width: 64%;
+  height: 18px;
+  margin-top: 9px;
+}
+.skeleton-contact {
+  width: 78%;
+  height: 15px;
+}
+.skeleton-location {
+  width: 45%;
+  height: 15px;
+}
+.skeleton-profile {
+  width: 55%;
+  height: 15px;
+}
+.skeleton-arrow {
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+}
+.list-view .skeleton-avatar {
+  width: 56px;
+  height: 56px;
+}
+.list-view .skeleton-badge,
+.list-view .skeleton-profile {
+  display: none;
+}
+.list-view .skeleton-name {
+  height: 23px;
+}
+.list-view .skeleton-position {
+  margin-top: 5px;
 }
 @keyframes loading {
   50% {
     opacity: 0.5;
   }
 }
-@keyframes sheet-enter {
-  from {
-    transform: translateX(28px);
-    opacity: 0.7;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 @media (min-width: 1600px) {
   .app-shell {
-    margin: 56px auto;
-    min-height: calc(100dvh - 112px);
     padding: 0 55px;
   }
   .app-header {
@@ -1303,16 +1353,15 @@ a[href^="tel:"]:hover {
 }
 @media (max-width: 1300px) {
   .app-shell {
-    margin: 24px;
-    min-height: calc(100dvh - 48px);
+    margin: 0 24px;
     padding: 0 32px;
   }
   .workspace-name {
     display: none;
   }
   .auth-shell {
-    margin: 30px;
-    min-height: 740px;
+    margin: 0 30px;
+    min-height: max(740px, 100dvh);
   }
   .auth-story {
     padding: 38px 34px;
@@ -1369,8 +1418,8 @@ a[href^="tel:"]:hover {
   }
   .auth-shell {
     grid-template-columns: 0.85fr 1fr;
-    margin: 22px;
-    min-height: 740px;
+    margin: 0 22px;
+    min-height: max(740px, 100dvh);
   }
   .auth-story {
     padding: 35px 28px;
@@ -1379,7 +1428,7 @@ a[href^="tel:"]:hover {
     padding: 35px 30px 25px;
   }
   .auth-intro h1 {
-    font-size: 39px;
+    font-size: 36px;
     letter-spacing: -1.4px;
   }
   .auth-intro {
@@ -1644,8 +1693,9 @@ a[href^="tel:"]:hover {
     margin-top: auto;
     padding: 10px 0;
   }
-  .demo-note {
-    margin-top: 28px;
+  .list-view .skeleton-avatar {
+    width: 48px;
+    height: 48px;
   }
   .sheet {
     width: 100%;
@@ -1737,7 +1787,8 @@ a[href^="tel:"]:hover {
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
-  *::after {
+  *::after,
+  *::backdrop {
     animation: none !important;
     transition: none !important;
     scroll-behavior: auto !important;

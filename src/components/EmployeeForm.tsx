@@ -7,11 +7,15 @@ import { Field, Sheet } from "./ui";
 
 export function EmployeeForm({
   departments,
+  open,
   onClose,
+  onExited,
   onCreated,
 }: {
   departments: string[];
+  open: boolean;
   onClose: () => void;
+  onExited: () => void;
   onCreated: (employee: Employee) => void;
 }) {
   const [busy, setBusy] = useState(false);
@@ -56,7 +60,13 @@ export function EmployeeForm({
   }
 
   return (
-    <Sheet title="Новый сотрудник" onClose={close} wide>
+    <Sheet
+      title="Новый сотрудник"
+      open={open}
+      onClose={close}
+      onExited={onExited}
+      wide
+    >
       <form
         className="employee-form"
         onSubmit={submit}

@@ -7,7 +7,7 @@ import {
   registerSchema,
 } from "../../shared/validation";
 import { api, ApiError, errorMessage } from "../api";
-import { Avatar, Brand, Field } from "./ui";
+import { Brand, Field } from "./ui";
 
 export function Auth({
   onAuthenticated,
@@ -54,8 +54,8 @@ export function Auth({
         <Brand />
         <div className="auth-intro">
           <h1>
-            Всё начинается
-            <br />с <span>людей.</span>
+            Управляйте
+            <br /> <span>сотрудниками.</span>
           </h1>
           <p>
             Ваша команда, её таланты и контакты.
@@ -196,18 +196,6 @@ export function Auth({
             >
               {register ? "Войти" : "Создать аккаунт"}
             </button>
-          </div>
-          <div className="demo-note">
-            <div className="avatar-stack">
-              <Avatar name="Анна" src="/portraits/anna.jpg" />
-              <Avatar name="Михаил" src="/portraits/mikhail.jpg" />
-              <Avatar name="София" src="/portraits/sofia.jpg" />
-            </div>
-            <p>
-              После регистрации — 5 демо-сотрудников,
-              <br />
-              чтобы сразу попробовать всё в деле.
-            </p>
           </div>
         </div>
         <p className="auth-bottom">People · Команда в одном месте</p>
