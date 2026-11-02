@@ -1,0 +1,721 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-02T10:57:06.842939+00:00",
+  "title": "Design System: People",
+  "extensions": {
+    "colorMeta": {
+      "primary": {
+        "role": "primary",
+        "displayName": "Action Blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.19904 259.66)",
+          "oklch(26.43% 0.19904 259.66)",
+          "oklch(37.86% 0.19904 259.66)",
+          "oklch(49.29% 0.19904 259.66)",
+          "oklch(60.71% 0.19904 259.66)",
+          "oklch(72.14% 0.19904 259.66)",
+          "oklch(83.57% 0.19904 259.66)",
+          "oklch(95.00% 0.19904 259.66)"
+        ]
+      },
+      "primary-hover": {
+        "role": "primary",
+        "displayName": "Action Blue Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.19634 259.72)",
+          "oklch(26.43% 0.19634 259.72)",
+          "oklch(37.86% 0.19634 259.72)",
+          "oklch(49.29% 0.19634 259.72)",
+          "oklch(60.71% 0.19634 259.72)",
+          "oklch(72.14% 0.19634 259.72)",
+          "oklch(83.57% 0.19634 259.72)",
+          "oklch(95.00% 0.19634 259.72)"
+        ]
+      },
+      "page": {
+        "role": "neutral",
+        "displayName": "Near-black Ground",
+        "tonalRamp": [
+          "oklch(15.00% 0.00399 286.02)",
+          "oklch(26.43% 0.00399 286.02)",
+          "oklch(37.86% 0.00399 286.02)",
+          "oklch(49.29% 0.00399 286.02)",
+          "oklch(60.71% 0.00399 286.02)",
+          "oklch(72.14% 0.00399 286.02)",
+          "oklch(83.57% 0.00399 286.02)",
+          "oklch(95.00% 0.00399 286.02)"
+        ]
+      },
+      "frame": {
+        "role": "neutral",
+        "displayName": "Gray Frame",
+        "tonalRamp": [
+          "oklch(15.00% 0.01592 277.76)",
+          "oklch(26.43% 0.01592 277.76)",
+          "oklch(37.86% 0.01592 277.76)",
+          "oklch(49.29% 0.01592 277.76)",
+          "oklch(60.71% 0.01592 277.76)",
+          "oklch(72.14% 0.01592 277.76)",
+          "oklch(83.57% 0.01592 277.76)",
+          "oklch(95.00% 0.01592 277.76)"
+        ]
+      },
+      "panel": {
+        "role": "neutral",
+        "displayName": "Charcoal Panel",
+        "tonalRamp": [
+          "oklch(15.00% 0.00939 294.90)",
+          "oklch(26.43% 0.00939 294.90)",
+          "oklch(37.86% 0.00939 294.90)",
+          "oklch(49.29% 0.00939 294.90)",
+          "oklch(60.71% 0.00939 294.90)",
+          "oklch(72.14% 0.00939 294.90)",
+          "oklch(83.57% 0.00939 294.90)",
+          "oklch(95.00% 0.00939 294.90)"
+        ]
+      },
+      "panel-hover": {
+        "role": "neutral",
+        "displayName": "Charcoal Panel Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.01317 298.56)",
+          "oklch(26.43% 0.01317 298.56)",
+          "oklch(37.86% 0.01317 298.56)",
+          "oklch(49.29% 0.01317 298.56)",
+          "oklch(60.71% 0.01317 298.56)",
+          "oklch(72.14% 0.01317 298.56)",
+          "oklch(83.57% 0.01317 298.56)",
+          "oklch(95.00% 0.01317 298.56)"
+        ]
+      },
+      "sheet": {
+        "role": "neutral",
+        "displayName": "Plum Charcoal Sheet",
+        "tonalRamp": [
+          "oklch(15.00% 0.01373 304.80)",
+          "oklch(26.43% 0.01373 304.80)",
+          "oklch(37.86% 0.01373 304.80)",
+          "oklch(49.29% 0.01373 304.80)",
+          "oklch(60.71% 0.01373 304.80)",
+          "oklch(72.14% 0.01373 304.80)",
+          "oklch(83.57% 0.01373 304.80)",
+          "oklch(95.00% 0.01373 304.80)"
+        ]
+      },
+      "text": {
+        "role": "neutral",
+        "displayName": "Warm White",
+        "tonalRamp": [
+          "oklch(15.00% 0.00265 286.35)",
+          "oklch(26.43% 0.00265 286.35)",
+          "oklch(37.86% 0.00265 286.35)",
+          "oklch(49.29% 0.00265 286.35)",
+          "oklch(60.71% 0.00265 286.35)",
+          "oklch(72.14% 0.00265 286.35)",
+          "oklch(83.57% 0.00265 286.35)",
+          "oklch(95.00% 0.00265 286.35)"
+        ]
+      },
+      "on-primary": {
+        "role": "neutral",
+        "displayName": "Button White",
+        "tonalRamp": [
+          "oklch(15.00% 0.00000 0.00)",
+          "oklch(26.43% 0.00000 0.00)",
+          "oklch(37.86% 0.00000 0.00)",
+          "oklch(49.29% 0.00000 0.00)",
+          "oklch(60.71% 0.00000 0.00)",
+          "oklch(72.14% 0.00000 0.00)",
+          "oklch(83.57% 0.00000 0.00)",
+          "oklch(95.00% 0.00000 0.00)"
+        ]
+      },
+      "muted": {
+        "role": "neutral",
+        "displayName": "Lavender Gray",
+        "tonalRamp": [
+          "oklch(15.00% 0.02005 295.74)",
+          "oklch(26.43% 0.02005 295.74)",
+          "oklch(37.86% 0.02005 295.74)",
+          "oklch(49.29% 0.02005 295.74)",
+          "oklch(60.71% 0.02005 295.74)",
+          "oklch(72.14% 0.02005 295.74)",
+          "oklch(83.57% 0.02005 295.74)",
+          "oklch(95.00% 0.02005 295.74)"
+        ]
+      },
+      "faint": {
+        "role": "neutral",
+        "displayName": "Quiet Gray",
+        "tonalRamp": [
+          "oklch(15.00% 0.02221 294.96)",
+          "oklch(26.43% 0.02221 294.96)",
+          "oklch(37.86% 0.02221 294.96)",
+          "oklch(49.29% 0.02221 294.96)",
+          "oklch(60.71% 0.02221 294.96)",
+          "oklch(72.14% 0.02221 294.96)",
+          "oklch(83.57% 0.02221 294.96)",
+          "oklch(95.00% 0.02221 294.96)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Charcoal Rule",
+        "tonalRamp": [
+          "oklch(15.00% 0.01188 292.38)",
+          "oklch(26.43% 0.01188 292.38)",
+          "oklch(37.86% 0.01188 292.38)",
+          "oklch(49.29% 0.01188 292.38)",
+          "oklch(60.71% 0.01188 292.38)",
+          "oklch(72.14% 0.01188 292.38)",
+          "oklch(83.57% 0.01188 292.38)",
+          "oklch(95.00% 0.01188 292.38)"
+        ]
+      },
+      "card-line": {
+        "role": "neutral",
+        "displayName": "Card Outline",
+        "tonalRamp": [
+          "oklch(15.00% 0.01775 303.65)",
+          "oklch(26.43% 0.01775 303.65)",
+          "oklch(37.86% 0.01775 303.65)",
+          "oklch(49.29% 0.01775 303.65)",
+          "oklch(60.71% 0.01775 303.65)",
+          "oklch(72.14% 0.01775 303.65)",
+          "oklch(83.57% 0.01775 303.65)",
+          "oklch(95.00% 0.01775 303.65)"
+        ]
+      },
+      "brand-dot": {
+        "role": "secondary",
+        "displayName": "Rose Wordmark Dot",
+        "tonalRamp": [
+          "oklch(15.00% 0.10131 348.21)",
+          "oklch(26.43% 0.10131 348.21)",
+          "oklch(37.86% 0.10131 348.21)",
+          "oklch(49.29% 0.10131 348.21)",
+          "oklch(60.71% 0.10131 348.21)",
+          "oklch(72.14% 0.10131 348.21)",
+          "oklch(83.57% 0.10131 348.21)",
+          "oklch(95.00% 0.10131 348.21)"
+        ]
+      },
+      "selected": {
+        "role": "neutral",
+        "displayName": "Soft White Selection",
+        "tonalRamp": [
+          "oklch(15.00% 0.00981 305.40)",
+          "oklch(26.43% 0.00981 305.40)",
+          "oklch(37.86% 0.00981 305.40)",
+          "oklch(49.29% 0.00981 305.40)",
+          "oklch(60.71% 0.00981 305.40)",
+          "oklch(72.14% 0.00981 305.40)",
+          "oklch(83.57% 0.00981 305.40)",
+          "oklch(95.00% 0.00981 305.40)"
+        ]
+      },
+      "on-selected": {
+        "role": "neutral",
+        "displayName": "Selected Ink",
+        "tonalRamp": [
+          "oklch(15.00% 0.01594 307.76)",
+          "oklch(26.43% 0.01594 307.76)",
+          "oklch(37.86% 0.01594 307.76)",
+          "oklch(49.29% 0.01594 307.76)",
+          "oklch(60.71% 0.01594 307.76)",
+          "oklch(72.14% 0.01594 307.76)",
+          "oklch(83.57% 0.01594 307.76)",
+          "oklch(95.00% 0.01594 307.76)"
+        ]
+      },
+      "secondary": {
+        "role": "neutral",
+        "displayName": "Secondary Charcoal",
+        "tonalRamp": [
+          "oklch(15.00% 0.01445 296.98)",
+          "oklch(26.43% 0.01445 296.98)",
+          "oklch(37.86% 0.01445 296.98)",
+          "oklch(49.29% 0.01445 296.98)",
+          "oklch(60.71% 0.01445 296.98)",
+          "oklch(72.14% 0.01445 296.98)",
+          "oklch(83.57% 0.01445 296.98)",
+          "oklch(95.00% 0.01445 296.98)"
+        ]
+      },
+      "secondary-hover": {
+        "role": "neutral",
+        "displayName": "Secondary Hover",
+        "tonalRamp": [
+          "oklch(15.00% 0.02118 300.52)",
+          "oklch(26.43% 0.02118 300.52)",
+          "oklch(37.86% 0.02118 300.52)",
+          "oklch(49.29% 0.02118 300.52)",
+          "oklch(60.71% 0.02118 300.52)",
+          "oklch(72.14% 0.02118 300.52)",
+          "oklch(83.57% 0.02118 300.52)",
+          "oklch(95.00% 0.02118 300.52)"
+        ]
+      },
+      "on-secondary": {
+        "role": "neutral",
+        "displayName": "Secondary White",
+        "tonalRamp": [
+          "oklch(15.00% 0.01273 306.02)",
+          "oklch(26.43% 0.01273 306.02)",
+          "oklch(37.86% 0.01273 306.02)",
+          "oklch(49.29% 0.01273 306.02)",
+          "oklch(60.71% 0.01273 306.02)",
+          "oklch(72.14% 0.01273 306.02)",
+          "oklch(83.57% 0.01273 306.02)",
+          "oklch(95.00% 0.01273 306.02)"
+        ]
+      },
+      "field": {
+        "role": "neutral",
+        "displayName": "Inset Charcoal",
+        "tonalRamp": [
+          "oklch(15.00% 0.01368 304.82)",
+          "oklch(26.43% 0.01368 304.82)",
+          "oklch(37.86% 0.01368 304.82)",
+          "oklch(49.29% 0.01368 304.82)",
+          "oklch(60.71% 0.01368 304.82)",
+          "oklch(72.14% 0.01368 304.82)",
+          "oklch(83.57% 0.01368 304.82)",
+          "oklch(95.00% 0.01368 304.82)"
+        ]
+      },
+      "field-line": {
+        "role": "neutral",
+        "displayName": "Field Outline",
+        "tonalRamp": [
+          "oklch(15.00% 0.02708 309.09)",
+          "oklch(26.43% 0.02708 309.09)",
+          "oklch(37.86% 0.02708 309.09)",
+          "oklch(49.29% 0.02708 309.09)",
+          "oklch(60.71% 0.02708 309.09)",
+          "oklch(72.14% 0.02708 309.09)",
+          "oklch(83.57% 0.02708 309.09)",
+          "oklch(95.00% 0.02708 309.09)"
+        ]
+      },
+      "field-text": {
+        "role": "neutral",
+        "displayName": "Field White",
+        "tonalRamp": [
+          "oklch(15.00% 0.01633 313.62)",
+          "oklch(26.43% 0.01633 313.62)",
+          "oklch(37.86% 0.01633 313.62)",
+          "oklch(49.29% 0.01633 313.62)",
+          "oklch(60.71% 0.01633 313.62)",
+          "oklch(72.14% 0.01633 313.62)",
+          "oklch(83.57% 0.01633 313.62)",
+          "oklch(95.00% 0.01633 313.62)"
+        ]
+      },
+      "focus": {
+        "role": "primary",
+        "displayName": "Keyboard Focus Blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.10122 261.41)",
+          "oklch(26.43% 0.10122 261.41)",
+          "oklch(37.86% 0.10122 261.41)",
+          "oklch(49.29% 0.10122 261.41)",
+          "oklch(60.71% 0.10122 261.41)",
+          "oklch(72.14% 0.10122 261.41)",
+          "oklch(83.57% 0.10122 261.41)",
+          "oklch(95.00% 0.10122 261.41)"
+        ]
+      },
+      "field-focus": {
+        "role": "primary",
+        "displayName": "Field Focus Blue",
+        "tonalRamp": [
+          "oklch(15.00% 0.11603 261.33)",
+          "oklch(26.43% 0.11603 261.33)",
+          "oklch(37.86% 0.11603 261.33)",
+          "oklch(49.29% 0.11603 261.33)",
+          "oklch(60.71% 0.11603 261.33)",
+          "oklch(72.14% 0.11603 261.33)",
+          "oklch(83.57% 0.11603 261.33)",
+          "oklch(95.00% 0.11603 261.33)"
+        ]
+      },
+      "error": {
+        "role": "secondary",
+        "displayName": "Rose Validation",
+        "tonalRamp": [
+          "oklch(15.00% 0.10248 0.95)",
+          "oklch(26.43% 0.10248 0.95)",
+          "oklch(37.86% 0.10248 0.95)",
+          "oklch(49.29% 0.10248 0.95)",
+          "oklch(60.71% 0.10248 0.95)",
+          "oklch(72.14% 0.10248 0.95)",
+          "oklch(83.57% 0.10248 0.95)",
+          "oklch(95.00% 0.10248 0.95)"
+        ]
+      },
+      "error-line": {
+        "role": "secondary",
+        "displayName": "Rose Error Border",
+        "tonalRamp": [
+          "oklch(15.00% 0.10860 1.35)",
+          "oklch(26.43% 0.10860 1.35)",
+          "oklch(37.86% 0.10860 1.35)",
+          "oklch(49.29% 0.10860 1.35)",
+          "oklch(60.71% 0.10860 1.35)",
+          "oklch(72.14% 0.10860 1.35)",
+          "oklch(83.57% 0.10860 1.35)",
+          "oklch(95.00% 0.10860 1.35)"
+        ]
+      },
+      "design-surface": {
+        "role": "secondary",
+        "displayName": "Rose Department Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.04326 342.90)",
+          "oklch(26.43% 0.04326 342.90)",
+          "oklch(37.86% 0.04326 342.90)",
+          "oklch(49.29% 0.04326 342.90)",
+          "oklch(60.71% 0.04326 342.90)",
+          "oklch(72.14% 0.04326 342.90)",
+          "oklch(83.57% 0.04326 342.90)",
+          "oklch(95.00% 0.04326 342.90)"
+        ]
+      },
+      "design-text": {
+        "role": "secondary",
+        "displayName": "Rose Department Text",
+        "tonalRamp": [
+          "oklch(15.00% 0.09739 348.77)",
+          "oklch(26.43% 0.09739 348.77)",
+          "oklch(37.86% 0.09739 348.77)",
+          "oklch(49.29% 0.09739 348.77)",
+          "oklch(60.71% 0.09739 348.77)",
+          "oklch(72.14% 0.09739 348.77)",
+          "oklch(83.57% 0.09739 348.77)",
+          "oklch(95.00% 0.09739 348.77)"
+        ]
+      },
+      "development-surface": {
+        "role": "secondary",
+        "displayName": "Blue Department Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.05216 260.54)",
+          "oklch(26.43% 0.05216 260.54)",
+          "oklch(37.86% 0.05216 260.54)",
+          "oklch(49.29% 0.05216 260.54)",
+          "oklch(60.71% 0.05216 260.54)",
+          "oklch(72.14% 0.05216 260.54)",
+          "oklch(83.57% 0.05216 260.54)",
+          "oklch(95.00% 0.05216 260.54)"
+        ]
+      },
+      "development-text": {
+        "role": "secondary",
+        "displayName": "Blue Department Text",
+        "tonalRamp": [
+          "oklch(15.00% 0.08474 261.73)",
+          "oklch(26.43% 0.08474 261.73)",
+          "oklch(37.86% 0.08474 261.73)",
+          "oklch(49.29% 0.08474 261.73)",
+          "oklch(60.71% 0.08474 261.73)",
+          "oklch(72.14% 0.08474 261.73)",
+          "oklch(83.57% 0.08474 261.73)",
+          "oklch(95.00% 0.08474 261.73)"
+        ]
+      },
+      "marketing-surface": {
+        "role": "secondary",
+        "displayName": "Lilac Department Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.04543 296.32)",
+          "oklch(26.43% 0.04543 296.32)",
+          "oklch(37.86% 0.04543 296.32)",
+          "oklch(49.29% 0.04543 296.32)",
+          "oklch(60.71% 0.04543 296.32)",
+          "oklch(72.14% 0.04543 296.32)",
+          "oklch(83.57% 0.04543 296.32)",
+          "oklch(95.00% 0.04543 296.32)"
+        ]
+      },
+      "marketing-text": {
+        "role": "secondary",
+        "displayName": "Lilac Department Text",
+        "tonalRamp": [
+          "oklch(15.00% 0.07351 298.90)",
+          "oklch(26.43% 0.07351 298.90)",
+          "oklch(37.86% 0.07351 298.90)",
+          "oklch(49.29% 0.07351 298.90)",
+          "oklch(60.71% 0.07351 298.90)",
+          "oklch(72.14% 0.07351 298.90)",
+          "oklch(83.57% 0.07351 298.90)",
+          "oklch(95.00% 0.07351 298.90)"
+        ]
+      },
+      "department-surface": {
+        "role": "neutral",
+        "displayName": "Neutral Department Surface",
+        "tonalRamp": [
+          "oklch(15.00% 0.00892 303.99)",
+          "oklch(26.43% 0.00892 303.99)",
+          "oklch(37.86% 0.00892 303.99)",
+          "oklch(49.29% 0.00892 303.99)",
+          "oklch(60.71% 0.00892 303.99)",
+          "oklch(72.14% 0.00892 303.99)",
+          "oklch(83.57% 0.00892 303.99)",
+          "oklch(95.00% 0.00892 303.99)"
+        ]
+      },
+      "department-text": {
+        "role": "neutral",
+        "displayName": "Neutral Department Text",
+        "tonalRamp": [
+          "oklch(15.00% 0.02032 308.21)",
+          "oklch(26.43% 0.02032 308.21)",
+          "oklch(37.86% 0.02032 308.21)",
+          "oklch(49.29% 0.02032 308.21)",
+          "oklch(60.71% 0.02032 308.21)",
+          "oklch(72.14% 0.02032 308.21)",
+          "oklch(83.57% 0.02032 308.21)",
+          "oklch(95.00% 0.02032 308.21)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Authentication introduction."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Directory heading."
+      },
+      "form-title": {
+        "displayName": "Form Title",
+        "purpose": "Authentication form heading."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Employee card names."
+      },
+      "sheet-title": {
+        "displayName": "Sheet Title",
+        "purpose": "Sticky modal sheet heading."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Explanatory prose."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Field and filter labels."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "Primary and secondary action labels."
+      },
+      "caption": {
+        "displayName": "Caption",
+        "purpose": "Supporting contact and context details."
+      },
+      "brand": {
+        "displayName": "Brand",
+        "purpose": "People wordmark."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sheet",
+        "value": "-20px 0 70px #0005",
+        "purpose": "Modal side sheet."
+      },
+      {
+        "name": "toast",
+        "value": "0 8px 30px #0005",
+        "purpose": "Transient notification."
+      },
+      {
+        "name": "field-focus",
+        "value": "0 0 0 3px #2779fc26",
+        "purpose": "Focused field."
+      },
+      {
+        "name": "search-focus",
+        "value": "0 0 0 3px #2779fc1a",
+        "purpose": "Focused search wrapper."
+      }
+    ],
+    "motion": [
+      {
+        "name": "control-state",
+        "value": "160ms ease",
+        "purpose": "Button and filter background; field border transitions."
+      },
+      {
+        "name": "card-state",
+        "value": "180ms ease",
+        "purpose": "Card background and border transitions."
+      },
+      {
+        "name": "sheet-enter",
+        "value": "240ms cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "From translateX(28px) and opacity .7 to translateX(0) and opacity 1."
+      },
+      {
+        "name": "loading",
+        "value": "1.4s ease-in-out infinite",
+        "purpose": "Opacity reaches .5 at the middle of each pulse."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "animation: none !important; transition: none !important; scroll-behavior: auto !important;",
+        "purpose": "Applied to every element and pseudo-element under prefers-reduced-motion: reduce."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "wide-min",
+        "value": "1600px"
+      },
+      {
+        "name": "compact-desktop-max",
+        "value": "1300px"
+      },
+      {
+        "name": "two-column-max",
+        "value": "1000px"
+      },
+      {
+        "name": "mobile-shell-max",
+        "value": "700px"
+      },
+      {
+        "name": "single-column-max",
+        "value": "560px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Main action with a legible white label in default and hover states.",
+      "html": "<button class=\"ds-button ds-primary\" type=\"button\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M5 12h14\"/></svg>Добавить сотрудника</button>",
+      "css": ".ds-button{font-family:\"Manrope Variable\",sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;border:0;border-radius:28px;padding:0 22px;font-size:13px;font-weight:550;cursor:pointer;transition:background .16s ease,color .16s ease}.ds-button:focus-visible{outline:2px solid var(--focus,#99beff);outline-offset:4px;}.ds-button:disabled{opacity:.6;cursor:wait}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-primary{background:var(--blue,#1666df);color:#fff}.ds-primary:hover:not(:disabled){background:#2470e8}"
+    },
+    {
+      "name": "Secondary Button",
+      "kind": "button",
+      "refersTo": "button-secondary",
+      "description": "Quiet cancel, retry and supporting action.",
+      "html": "<button class=\"ds-button ds-secondary\" type=\"button\">Отмена</button>",
+      "css": ".ds-button{font-family:\"Manrope Variable\",sans-serif;display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;border:0;border-radius:28px;padding:0 22px;font-size:13px;font-weight:550;cursor:pointer;transition:background .16s ease,color .16s ease}.ds-button:focus-visible{outline:2px solid var(--focus,#99beff);outline-offset:4px;}.ds-button:disabled{opacity:.6;cursor:wait}@media(prefers-reduced-motion:reduce){.ds-button{transition:none}}.ds-secondary{background:#302e36;border:1px solid #4e4957;color:#ece8f1}.ds-secondary:hover:not(:disabled){background:#3d3945}"
+    },
+    {
+      "name": "Icon Button",
+      "kind": "button",
+      "refersTo": "button-icon",
+      "description": "Circular close control with an explicit accessible name.",
+      "html": "<button class=\"ds-icon-button\" type=\"button\" aria-label=\"Закрыть\"><svg width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m18 6-12 12M6 6l12 12\"/></svg></button>",
+      "css": ".ds-icon-button{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:transparent;color:var(--muted,#b1aebc);border:1px solid var(--line,#414047);cursor:pointer}.ds-icon-button:hover{background:#39363f;color:#fff}.ds-icon-button:focus-visible{outline:2px solid var(--focus,#99beff);outline-offset:4px;}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Persistent label, inset field and visible focus; invalid state includes text.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-name\">ФИО <span>*</span></label><input id=\"ds-name\" name=\"name\" placeholder=\"Иван Петрович Иванов\" required aria-describedby=\"ds-hint\"/><span class=\"ds-hint\" id=\"ds-hint\">Полное имя сотрудника</span></div>",
+      "css": ".ds-field{font-family:\"Manrope Variable\",sans-serif;display:flex;flex-direction:column;gap:9px;max-width:380px}.ds-field label{font-size:12px;color:#e5dce9}.ds-field label span{color:#ba9ad1}.ds-field input{font-family:\"Manrope Variable\",sans-serif;min-width:0;min-height:50px;padding:14px 15px;border:1px solid #48404f;border-radius:12px;background:#242128;color:#f6effa;font-size:12px;transition:border-color .16s ease}.ds-field input::placeholder{color:#a397af}.ds-field input:focus{outline:none;border-color:#8bb5ff;box-shadow:0 0 0 3px #2779fc26}.ds-field input[aria-invalid=\"true\"]{border-color:#e08aa3}.ds-hint{font-size:10px;line-height:1.6;color:#b3a7bf}@media(prefers-reduced-motion:reduce){.ds-field input{transition:none}}"
+    },
+    {
+      "name": "Search",
+      "kind": "input",
+      "refersTo": "search",
+      "description": "Leading search icon and focus ring around the complete control.",
+      "html": "<div class=\"ds-search\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><circle cx=\"11\" cy=\"11\" r=\"8\"/><path d=\"m21 21-4.35-4.35\"/></svg><input type=\"search\" aria-label=\"Поиск по ФИО\" placeholder=\"Найти сотрудника по имени или фамилии\"/></div>",
+      "css": ".ds-search{font-family:\"Manrope Variable\",sans-serif;display:flex;align-items:center;gap:13px;height:54px;padding:0 17px;border:1px solid #3a3741;border-radius:14px;background:var(--panel,#232227);color:#aaa4b5}.ds-search svg{flex-shrink:0}.ds-search input{font-family:\"Manrope Variable\",sans-serif;min-width:0;width:100%;height:100%;border:0;background:none;color:#f4f1f9;font-size:13px}.ds-search input::placeholder{color:#aaa5b3}.ds-search:focus-within{border-color:#8bb5ff;box-shadow:0 0 0 3px #2779fc1a}.ds-search input:focus{outline:0}"
+    },
+    {
+      "name": "Department Filter",
+      "kind": "chip",
+      "refersTo": "filter",
+      "description": "Outlined pill with count; selected state inverts to soft white.",
+      "html": "<div class=\"ds-filters\"><button class=\"ds-filter\" type=\"button\" aria-pressed=\"true\">Все сотрудники <span>5</span></button><button class=\"ds-filter\" type=\"button\" aria-pressed=\"false\">Дизайн <span>2</span></button></div>",
+      "css": ".ds-filters{display:flex;gap:8px;flex-wrap:wrap}.ds-filter{font-family:\"Manrope Variable\",sans-serif;display:flex;align-items:center;gap:12px;white-space:nowrap;font-size:12px;min-height:40px;padding:0 15px;background:transparent;color:#c1bacb;border:1px solid #3a3742;border-radius:30px;cursor:pointer;transition:background .16s ease}.ds-filter span{display:flex;align-items:center;justify-content:center;min-width:18px;height:18px;border-radius:50%;background:#35323c;color:#cbc4d5;font-size:10px;font-variant-numeric:tabular-nums}.ds-filter[aria-pressed=\"true\"]{background:#f2eff6;border-color:#f2eff6;color:#242028}.ds-filter[aria-pressed=\"true\"] span{background:#ded8e7;color:#37303f}.ds-filter:hover:not([aria-pressed=\"true\"]){background:#302c37}.ds-filter:focus-visible{outline:2px solid var(--focus,#99beff);outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-filter{transition:none}}"
+    },
+    {
+      "name": "Department Badge",
+      "kind": "chip",
+      "refersTo": "department-design",
+      "description": "Informational department names with a redundant colored dot.",
+      "html": "<div class=\"ds-badges\"><span class=\"ds-badge ds-pink\"><span></span>Дизайн</span><span class=\"ds-badge ds-blue\"><span></span>Разработка</span><span class=\"ds-badge ds-lilac\"><span></span>Маркетинг</span></div>",
+      "css": ".ds-badges{display:flex;gap:8px;flex-wrap:wrap}.ds-badge{font-family:\"Manrope Variable\",sans-serif;display:inline-flex;align-items:center;gap:6px;max-width:180px;border-radius:20px;padding:6px 10px;font-size:10px;line-height:1.3;overflow-wrap:anywhere}.ds-badge>span{width:5px;height:5px;border-radius:50%;background:currentColor;flex-shrink:0}.ds-pink{background:#49303f;color:#f6acd0}.ds-blue{background:#293954;color:#a9c8ff}.ds-lilac{background:#3c354f;color:#d1c1f5}"
+    },
+    {
+      "name": "Authentication Navigation",
+      "kind": "nav",
+      "refersTo": "auth-navigation",
+      "description": "Grouped mode buttons with a filled selected segment.",
+      "html": "<div class=\"ds-auth-tabs\" aria-label=\"Авторизация\"><button type=\"button\" aria-pressed=\"true\">Вход</button><button type=\"button\" aria-pressed=\"false\">Регистрация</button></div>",
+      "css": ".ds-auth-tabs{display:inline-flex;gap:4px;background:#242128;border:1px solid #403947;border-radius:30px;padding:4px}.ds-auth-tabs button{font-family:\"Manrope Variable\",sans-serif;border:0;border-radius:26px;padding:10px 24px;background:none;font-size:12px;color:#b7adbf;cursor:pointer}.ds-auth-tabs button[aria-pressed=\"true\"]{background:#4b4156;color:#fff}.ds-auth-tabs button:focus-visible{outline:2px solid var(--focus,#99beff);outline-offset:4px;}"
+    },
+    {
+      "name": "Employee Card",
+      "kind": "card",
+      "refersTo": "employee-card",
+      "description": "Portrait-led identity surface; this preview uses the implemented initials fallback.",
+      "html": "<article class=\"ds-card\"><div class=\"ds-card-top\"><span class=\"ds-avatar\" aria-label=\"Анна Смирнова\">АС</span><span class=\"ds-department\"><span></span>Дизайн</span></div><h2><button type=\"button\">Анна Смирнова</button></h2><p class=\"ds-fullname\">Анна Сергеевна Смирнова</p><p class=\"ds-position\">Продуктовый дизайнер</p><div class=\"ds-contacts\"><a href=\"mailto:anna.smirnova@example.com\">anna.smirnova@example.com</a><span>Москва</span></div><button class=\"ds-profile\" type=\"button\" aria-label=\"Открыть профиль: Анна Сергеевна Смирнова\"><span>Профиль сотрудника</span><span class=\"ds-arrow\"><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 17 17 7M7 7h10v10\"/></svg></span></button></article>",
+      "css": ".ds-card{font-family:\"Manrope Variable\",sans-serif;max-width:360px;background:var(--panel,#232227);color:#f5f5f7;border:1px solid #403c46;border-radius:var(--radius,24px);padding:25px 25px 0;transition:border-color .18s ease,background .18s ease}.ds-card:hover{background:#26242b;border-color:#6a606f}.ds-card-top{display:flex;align-items:flex-start;justify-content:space-between;gap:12px;margin-bottom:20px}.ds-avatar{display:inline-flex;align-items:center;justify-content:center;width:76px;height:76px;flex-shrink:0;border-radius:50%;background:#46405a;color:#f0e5ff;font-size:26px;font-weight:550}.ds-department{display:inline-flex;align-items:center;gap:6px;border-radius:20px;padding:6px 10px;background:#49303f;color:#f6acd0;font-size:10px;line-height:1.3}.ds-department>span{width:5px;height:5px;border-radius:50%;background:currentColor}.ds-card h2{margin:0;font-size:20px;font-weight:550;letter-spacing:-.45px}.ds-card h2 button{font:inherit;color:inherit;border:0;background:transparent;padding:0;text-align:left;line-height:1.35;cursor:pointer;overflow-wrap:anywhere}.ds-card h2 button:hover{color:#d9c9f2}.ds-fullname{font-size:10px;color:#a49bac;margin:5px 0 0}.ds-position{font-size:12px;color:#c4bccd;margin:9px 0 0;line-height:1.5}.ds-contacts{display:flex;flex-direction:column;gap:10px;margin-top:23px;min-height:44px;font-size:11px;color:#bcb5c7}.ds-contacts a{color:inherit;text-decoration:none;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.ds-contacts a:hover{text-decoration:underline;text-underline-offset:4px}.ds-profile{font-family:\"Manrope Variable\",sans-serif;display:flex;align-items:center;justify-content:space-between;gap:8px;width:100%;background:none;border:0;border-top:1px solid #3b3541;color:#bcb3c7;text-align:left;font-size:11px;margin-top:23px;padding:15px 0;cursor:pointer}.ds-profile:hover{color:#fff}.ds-arrow{display:flex;align-items:center;justify-content:center;width:28px;height:28px;border-radius:50%;border:1px solid #59505f;color:#e9dff2;transition:background .16s ease}.ds-profile:hover .ds-arrow{background:#584967}.ds-card button:focus-visible,.ds-card a:focus-visible{outline:2px solid var(--focus,#99beff);outline-offset:4px;}@media(prefers-reduced-motion:reduce){.ds-card,.ds-arrow{transition:none}}"
+    },
+    {
+      "name": "Side Sheet",
+      "kind": "custom",
+      "refersTo": "detail-sheet",
+      "description": "Static preview of the modal sheet material and header; the application uses a native modal dialog.",
+      "html": "<section class=\"ds-sheet\" aria-label=\"Профиль сотрудника\"><header class=\"ds-sheet-heading\"><h2>Профиль сотрудника</h2><button class=\"ds-sheet-close\" type=\"button\" aria-label=\"Закрыть\"><svg width=\"21\" height=\"21\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"m18 6-12 12M6 6l12 12\"/></svg></button></header><div class=\"ds-sheet-body\">Информация о сотруднике</div></section>",
+      "css": ".ds-sheet{font-family:\"Manrope Variable\",sans-serif;width:480px;max-width:100%;background:#232027;color:#f6eff9;border-left:1px solid #514356;border-radius:24px 0 0 24px;box-shadow:-20px 0 70px #0005;overflow:auto}.ds-sheet-heading{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:25px 30px;border-bottom:1px solid #423746;background:#232027}.ds-sheet-heading h2{font-size:18px;font-weight:500;letter-spacing:-.3px;margin:0}.ds-sheet-close{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;border-radius:50%;background:transparent;color:var(--muted,#b1aebc);border:1px solid var(--line,#414047);cursor:pointer}.ds-sheet-close:hover{background:#39363f;color:#fff}.ds-sheet-close:focus-visible{outline:2px solid var(--focus,#99beff);outline-offset:4px;}.ds-sheet-body{padding:30px;font-size:13px;color:#c4b6ce;line-height:1.9}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Charcoal Team Space",
+    "overview": "People uses near-black ground, charcoal surfaces and warm white Manrope to make a working team feel approachable. Portraits supply the human detail; blue actions and soft pink, blue and lilac department markers provide clear points of attention. The user’s dark reference establishes the material character and generous rounding.\n\nThe interface balances open page spacing with compact labels and contact details. Panels are mostly flat, separated by tonal shifts and thin borders. Forms and profiles share a focused side sheet, while authentication introduces the same palette through a restrained portrait composition.",
+    "keyCharacteristics": [
+      "Near-black ground and charcoal panels with warm, lavender-tinted neutrals.",
+      "Self-hosted Manrope with light large headings and firmer controls.",
+      "Circular portraits, pill controls and generous panel corners.",
+      "Blue primary actions; pastel department labels retain their visible text.",
+      "Flat resting surfaces, explicit keyboard focus and brief state transitions."
+    ],
+    "rules": [
+      {
+        "name": "The Action Blue Rule",
+        "body": "Use primary blue for the main action and preserve white button text in both default and hover states. Department blues use their separate muted surface and light text pairing.",
+        "section": "colors"
+      },
+      {
+        "name": "The Human Hierarchy Rule",
+        "body": "Let portraits and names lead. Use weight and scale to distinguish headings, labels and supporting details without adding decorative uppercase eyebrows.",
+        "section": "typography"
+      },
+      {
+        "name": "The Flat Resting Surface Rule",
+        "body": "Separate resting panels with tone and thin borders. Reserve diffuse shadows for overlays and transient notifications.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do reuse the existing primary button, field, filter and sheet treatments before introducing a new variant.",
+      "Do retain visible labels alongside department colors and accessible names for icon-only buttons.",
+      "Do preserve full-name wrapping and the avatar initials fallback for long names or unavailable portraits.",
+      "Do keep keyboard focus visible and disable animation and transitions under reduced-motion preference.",
+      "Do retain the rounded, portrait-led material language across authentication and directory surfaces."
+    ],
+    "donts": [
+      "Don't add uppercase eyebrows, hard offset shadows, or glyph characters in place of the existing SVG icon language.",
+      "Don't use muted metadata colors for primary labels or lower the contrast of blue actions.",
+      "Don't promote every compact metadata size into a body-copy role; reuse the larger body and label roles for reading and input.",
+      "Don't add gradients or ornamental depth to the flat charcoal panel treatment."
+    ]
+  }
+}
