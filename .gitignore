@@ -1,0 +1,15 @@
+node_modules/
+dist/
+dist-server/
+data/
+.env
+.env.*
+.vercel/
+test-results/
+playwright-report/
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/context.local.json
+*.log
+*.tsbuildinfo
+.vercel
